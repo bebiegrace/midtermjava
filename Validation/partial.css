@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(164, 161, 156);
+}
+.container{
+    padding: 20px;
+    /* background-color: aliceblue; */
+  
+  margin:60%;
+  margin: auto;
+}
+.conb{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: aqua;
+    text-align: center;
+}
