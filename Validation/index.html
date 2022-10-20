@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM VALIDATION</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
@@ -16,14 +20,24 @@
         <div class="title">
             <h2>Create Account</h2>
         </div>
-        <!-- USERNAME -->
+        <!-- First Name -->
         <div class="input-group">
-            <label for="username">Name</label>
-            <input type="text" id="username" placeholder="Name" name="username">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Firstname" name="fname">
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
             <p>Error Message</p>
         </div>
+
+         <!-- Last Name -->
+         <div class="input-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last Name" name="lname">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
         <!-- EMAIL -->
         <div class="input-group">
             <label for="email">Email</label>
@@ -32,6 +46,25 @@
             <i class="fas fa-exclamation-circle"></i>
             <p>Error Message</p>
         </div>
+
+         <!-- Birthdate -->
+         <div class="input-group">
+            <label for="bdate">Birthdate</label>
+            <input type="date" id="bdate" placeholder="Birthdate" name="bdate">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="input-group">
+            <label for="pnumber">Phone Number</label>
+            <input type="tel" id="pnumber" placeholder="Phone Number" name="pnumber">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+
         <!-- PASSWORD -->
         <div class="input-group">
             <label for="password">Password</label>
@@ -53,6 +86,10 @@
     </form>
 
 
+
+    
+
+
     <!-- JAVASCRIPT -->
     <script src="app.js"></script>
 </body>
@@ -64,3 +101,4 @@
     <i class="fas fa-exclamation-circle"></i>
 
  -->
+
