@@ -19,11 +19,11 @@ public class Main {
         char choices;
 
         List<professionals> pro = new ArrayList<professionals>();
-
-        while (true) {
-            System.out.println("=====================");
+             System.out.println("=====================");
             System.out.println("=====================");
             System.out.println("\nWelcome to professional world!!");
+
+        while (true) {  
             System.out.println("==============================");
             System.out.println(" Main Menu\n");
             System.out.print("1.) Add professional \n");
@@ -105,19 +105,28 @@ public class Main {
 
                     case 2:
                         System.out.println("==> Professionals' name list <==");
-                        System.out.println("===============================================");
+                        System.out.println("=======================");
                         int arrs = pro.size();
+                    
+                        boolean ansa = pro.isEmpty(); 
+                       
+
                         for (int b = 0; b < arrs; b++) {
-
-                            System.out.println("Username: " + pro.get(b).getUsername());
-
+                            System.out.println("Username: " + pro.get(b).getUsername());    
+                            
                         }
 
-                        do {
+                        if(ansa== true){
+                            System.out.println("Nothing to remove! The list is currently empty!");
+                         }else
 
+                        do {
+                               
+                            try{
                             for (int i = 0; i < 1; i++) {
 
                                 if (i >= 0 && i < pro.size()) {
+
                                     String username;
 
                                     System.out.print("Enter professional's name you want to remove: ");
@@ -130,14 +139,24 @@ public class Main {
                                             System.out.println("Found that username at index " + ie);
                                             pro.remove(ie);
                                             System.out.println("... and has been remove from the list.");
+                                        }else if(!p.username.equals(username)){
+                                            System.out.println("____________________");
+                                            throw new BebieErrorException(
+                                                "That username was out of the list!");
                                         }
                                     }
                                 }
                             }
+                                    
+                            } catch (BebieErrorException e) {
+                                System.out.println(e.getMessage());
+                            }
+
                             System.out.println("**======================**");
                             System.out.println("Do You Want To Continue(Y/N)");
                             choice = scan.next().charAt(0);
                         } while (choice == 'Y' || choice == 'y');
+
 
                         break;
 
