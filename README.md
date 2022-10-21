@@ -1,2 +1,0 @@
-# midtermjava
-partial
