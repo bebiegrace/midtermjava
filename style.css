@@ -1,0 +1,142 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(182, 153, 132);
+}
+
+#create-account-form {
+    width:70%;
+    height: 30%;
+    margin: auto;
+    padding:20px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    /* margin:20px 0;  */
+    position:relative;
+}
+
+.input-group label {
+    display:inline-block;
+    /* margin-bottom: 5px; */
+}
+
+.input-group input {
+    display:block;
+    width:100%;
+    padding:10px;   
+}
+
+.error input {
+    border:3px red solid;
+}
+
+.success input {
+    border:3px green solid;
+}
+
+ .input-group i {
+     position:absolute;
+     right:10px;
+     top:35px;
+     visibility: hidden;
+ }
+
+
+ .success i.fa-check-circle{
+     visibility: visible;
+     color:green;
+ }
+
+ .error i.fa-exclamation-circle {
+    visibility: visible;
+    color:red;
+}
+
+
+ .input-group p {
+     font-size: 15px;
+     color:red;
+     visibility: hidden;
+ }
+
+ .error p {
+     visibility: visible;
+ }
+
+ .btn {
+     width:100%;
+     padding:10px;
+     font-size: 20px;
+     background-color: chocolate;
+     color:#fff;
+     text-transform: uppercase;
+     border:none;
+ }
+
+
+ /* .popup{
+    width: 400px;
+    background:coral;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+ }
+.open-popup{
+    visibility: visible;
+    top: 80%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+ .popup button{
+    width:100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: white;
+    color: black;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px burlywood;
+ } */
+ .conb{
+    padding: 20px;
+    margin-top: 50px;
+    background-color: aqua;
+    text-align: center;
+   
+}
+
+
+
+
+
+
+
+
+
+
